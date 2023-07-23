@@ -1,0 +1,26 @@
+<!--Embedding your own audio and video-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<video controls
+		   poster="image/rabbit.png"
+		   width="512px"
+		   height="512px">
+		<source src="video/rabbit320.mp4" type="video/mp4">
+		<source src="video/rabbit320.webm" type="video/webm">
+		<track kind="subtitles" src="tracks/simple-track.vtt" srclang="en">
+		<p>A video showing a rabbit</p>
+	</video>
+
+	<audio controls>
+		<source src="audio/viper.mp3" type="audio/mp3">
+		<source src="audio/viper.ogg" type="audio/ogg">
+		<p>Popular music</p>
+	</audio>
+</body>
+</html>
