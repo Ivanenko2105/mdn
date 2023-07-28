@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<img    srcset=" image/elva-fairy-320w.jpg 320w,
+					image/elva-fairy-480w.jpg 480w,
+					image/elva-fairy-800w.jpg 800w"
+
+		    sizes=" (max-width: 320px) 280px,
+					(max-width: 480px) 440px,
+					800px"
+			src="image/elva-fairy-800w.jpg" alt="">
+
+	<picture>
+		<source media="(max-width: 799px)" srcset="image/elva-480w-close-portrait.jpg" />
+		<source media="(min-width: 800px)" srcset="image/elva-800w.jpg" />
+		<img src="image/elva-800w.jpg" alt="Chris standing up holding his daughter Elva" />
+	</picture>
+</body>
+</html>
